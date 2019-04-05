@@ -6,8 +6,8 @@ LOCAL_PATH := device/moto/e4
 
 $(call inherit-product-if-exists, vendor/moto/e4/e4-vendor.mk)
 
+# Overlay
 DEVICE_PACKAGE_OVERLAYS += device/moto/e4/overlay
-PRODUCT_PACKAGE_OVERLAYS += device/moto/e4/overlay # enable this to be able overlay a default wallpaper
 
 # Dalvik/HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
@@ -141,12 +141,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
-
-# FM Radio
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl \
-    FMRadio \
-    libfmjni
 
 # Camera
 PRODUCT_PACKAGES += \

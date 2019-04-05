@@ -70,8 +70,6 @@ allow system_server zygote:unix_stream_socket { getopt getattr };
 # For WiFi framework to communicate with hostapd over socket,
 # send command and get information for hotspot manager functionality.
 allow system_server wpa_wlan0_socket:sock_file w_file_perms;
-allow system_server hostapd:unix_dgram_socket sendto;
-allow hostapd system_server:unix_dgram_socket sendto;
 
 # Communicate over a socket created by mnld process.
 allow system_server mnld_data_file:sock_file create_file_perms;

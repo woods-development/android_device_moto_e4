@@ -154,10 +154,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
-# Power
-PRODUCT_PACKAGES += \
-    power.mt6737m
-    
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
